@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 
 var port = process.env.PORT || 3000;
 
-// Tempaltes
+// Templates
 app.set('view engine', 'pug');
 app.set('views', 'assets/templates');
 
