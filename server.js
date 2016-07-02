@@ -22,10 +22,10 @@ var port = process.env.PORT || 3000;
 
 // Tempaltes
 app.set('view engine', 'pug');
-app.set('views', './templates');
+app.set('views', 'assets/templates');
 
 // public directory.
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + 'public'));
 
 app.get('/', index);
 

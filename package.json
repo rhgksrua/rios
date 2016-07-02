@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "webpack ./public/webpack.js ./public/index.js; node server.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "pug": "^2.0.0-beta3"
+  },
+  "devDependencies": {
+    "stylus-loader": "~2.1.1",
+    "stylus": "~0.54.5",
+    "webpack": "~1.13.1"
   }
 }
