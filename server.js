@@ -25,7 +25,7 @@ app.set('view engine', 'pug');
 app.set('views', 'assets/templates');
 
 // public directory.
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', index);
 
