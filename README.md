@@ -9,6 +9,8 @@ Run `npm install`.
 
 Run `node server.js` or `npm start`.
 
+Run `webpack` or `webpack --watch` to monitor changes.
+
 
 ## Notes
 
