@@ -1,3 +1,3 @@
-import '../public/index.styl';
+import './index.styl';
 
 console.log('hello world');
