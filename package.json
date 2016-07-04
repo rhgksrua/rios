@@ -23,7 +23,8 @@
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "pug": "^2.0.0-beta3",
-    "react": "^0.14.8"
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
   },
   "devDependencies": {
     "stylus-loader": "~2.1.1",
