@@ -22,7 +22,7 @@ var port = process.env.PORT || 3000;
 
 // Templates
 app.set('view engine', 'pug');
-app.set('views', 'assets/templates');
+app.set('views', 'templates');
 
 // public directory.
 app.use(express.static(__dirname + '/public'));
@@ -30,7 +30,10 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', index);
 
 function index(req, res) {
-    return res.render('index');
+    if (process.env.NODE_ENV === 'development') {
+        return res.render('index');
+    }
+    return res.render('production');
 }
 
 app.listen(port, function() {
