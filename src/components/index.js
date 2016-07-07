@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import '../../public/index.styl';
-//import './index.styl';
+import '../styles/index.styl';
 
 ReactDom.render((
     <div>
