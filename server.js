@@ -51,14 +51,14 @@ app.set('views', 'templates');
 // public directory.
 app.use(express.static(__dirname + '/public'));
 
+// user login and signup routes
 const userRoute = require('./routes/userRoute.js')(passport);
 app.use('/user', userRoute);
 
+// redirects all request to '/'
 app.get('/*', index);
 
 function index(req, res) {
-    console.log('--- req user', req.user);
-    console.log('--- session', req.session);
     if (process.env.NODE_ENV === 'development') {
         return res.render('index');
     }

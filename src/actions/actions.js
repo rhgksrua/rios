@@ -73,7 +73,7 @@ export const checkLogInStatusFetch = (currentPath) => {
             if (userInfo.error) {
                 throw new Error(userInfo.error);
             }
-            if (currentPath === '/login') {
+            if (currentPath === '/login' || currentPath === '/signup') {
                 browserHistory.push('/');
             }
             dispatch(addUserInfo(userInfo));
