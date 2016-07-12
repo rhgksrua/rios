@@ -27820,7 +27820,6 @@
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
 	            // check user login status
-	            console.log('--- pathname', this.props);
 	            this.props.checkLogin(this.props.location.pathname);
 	        }
 	    }, {

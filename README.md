@@ -25,3 +25,25 @@ OR
 ## Notes
 
 * Running on node version v4.4.5
+
+## TODO
+
+### Client Side Request Forms
+
+1. React Component
+    * Submit form
+        * Need validate requests. i.e. cannot send empty requests or user is not logged in.
+    * Create required actions and action types (react redux).
+    * Add action types to reducers (react redux).
+    * Fetch user saved templates.
+    
+2. Server endpoint (receive requests)
+    * Create mongoose schema that describes user requests.
+    * Receive requests and save them to database.
+        * Need to authenticate users before accepting requests.
+    * Return success or error message back to client as JSON.
+
+
+
+
+

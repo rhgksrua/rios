@@ -8,7 +8,6 @@ class App extends React.Component {
     }
     componentDidMount() {
         // check user login status
-        console.log('--- pathname', this.props)
         this.props.checkLogin(this.props.location.pathname);
     }
     handleLogOut() {
@@ -22,6 +21,15 @@ class App extends React.Component {
                     {this.props.userInfo && this.props.userInfo.first &&
                     <p>user: {this.props.userInfo.first} {this.props.userInfo.last}</p>
                     }
+                    {/* Add components below */}
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    {/* Add components above */}
                 </header>
                 <Link to='/' activeClassName='active'>Home</Link>
                 {!this.props.userInfo.first &&
