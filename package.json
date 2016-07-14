@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "webpack": "NODE_ENV=development nodemon server.js & webpack",
-    "webpack:watch": "NODE_ENV=development nodemon server.js & webpack --watch"
+    "webpack:watch": "NODE_ENV=development nodemon server.js & webpack --watch",
+    "win:webpack" : "SET NODE_ENV=development; nodemon server.js & webpack",
+    "win:webpack:watch" : "SET NODE_ENV=development; nodemon server.js & webpack --watch"
   },
   "repository": {
     "type": "git",
