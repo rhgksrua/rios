@@ -7,6 +7,9 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
+
+console.log("\nStarting Server...")
+
 mongoose.Promise = require('bluebird');
 
 // Setting environment variables through .env file
@@ -30,7 +33,7 @@ const port = process.env.PORT || 3000;
 let MONGO_URI;
 
 if (process.env.NODE_ENV === 'development') {
-    console.log('NODE_ENV=development');
+    console.log('\nNODE_ENV = development');
     mongoose.connect('localhost:27017/rios');
 } else {
     const MONGO_URI = process.env.MONGODB_URI || process.env.MONGO_URI || process.env.IP + "/rios";
@@ -72,5 +75,5 @@ function index(req, res) {
 }
 
 app.listen(port, function() {
-    console.log('http://localhost:' + port);
+    console.log('\nConnect to: http://localhost:' + port);
 });
