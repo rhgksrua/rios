@@ -27,21 +27,15 @@ require('./config/passport')(passport);
 
 const port = process.env.PORT || 3000;
 
-const platform = process.platform;
-
 let MONGO_URI;
 
-if (platform === 'win32' || platform === 'win64') {
-
-    MONGO_URI = 'localhost:27017' + '/rios';
-
+if (process.env.NODE_ENV === 'development') {
+    console.log('NODE_ENV=development');
+    mongoose.connect('localhost:27017/rios');
 } else {
-
-    MONGO_URI = process.env.MONGODB_URI || process.env.MONGO_URI || process.env.IP + "/rios";
-
+    const MONGO_URI = process.env.MONGODB_URI || process.env.MONGO_URI || process.env.IP + "/rios";
+    mongoose.connect(MONGO_URI);
 }
-
-mongoose.connect(MONGO_URI);
 
 app.use(session({
     secret: 'riossessionsecret',
