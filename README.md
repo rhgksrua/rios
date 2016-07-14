@@ -20,7 +20,7 @@ Then
 OR
 
 > Run `npm run webpack` or `npm run webpack:watch` to monitor changes.
-> If developing on windows add `win:` before the scripts above, e.g `npm run win:webpack`
+> * If developing on windows add `win:` before the scripts above, e.g `npm run win:webpack`
 
 
 
