@@ -1,5 +1,5 @@
 # other
-public/
+public/*
 .env
 
 # mongodb for c9
