@@ -1,2 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai|Pattaya|Titillium+Web")
+
+$font-family = "\'Arima Madurai\'" "\'Titillium Web\'" "\'Pattaya\'"
+
+font($index = 0, $size = initial)
+    $family = index($font-family, $index)
+    font-family ($index > 0 ? $family : sans-serif)
+    font-size 	$size
+
+$Flush
+    margin 0
+    padding @margin
+
 body
-    background: red
+    @extend $Flush
+    background lightness(saturation(blue, 20%), 85%)
+.Title
+    font(1, 3.75vmax)
+    letter-spacing 1.5vmax
+.Subtitle
+    font(1, 2.25vmax)
