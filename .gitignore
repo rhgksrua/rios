@@ -1,3 +1,7 @@
+# other
+public/
+.env
+
 # mongodb for c9
 data/
 
