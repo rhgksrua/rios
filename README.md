@@ -27,7 +27,7 @@ OR
 ## Notes
 
 * Running on node version v4.4.5
-* `bundle.js` (transipled client js file) is not being tracked.  You have to run `webpack` to generate your own.
+* `bundle.js` (transpiled client js file) is not being tracked.  You have to run `webpack` to generate your own.
 
 ## TODO
 
